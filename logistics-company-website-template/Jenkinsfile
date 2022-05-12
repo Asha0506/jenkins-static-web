@@ -1,14 +1,14 @@
 pipeline {
   environment {
-    imagename = "vinodh1988leo/my-jenkins-website"
-    registryCredential = 'dockerCredentials'
+    imagename = "ashalohi/my-jenkins-website"
+    registryCredential = 'Dockercredentials'
     dockerImage = ''
   }
   agent any
   stages {
     stage('Cloning Git') {
       steps {
-        git([url: 'https://github.com/vinodh1988/jenkins-static-web', branch: 'master'])
+        git([url: 'https://github.com/Asha0506/jenkins-static-web', branch: 'master'])
 
       }
     }
